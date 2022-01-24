@@ -81,9 +81,9 @@ director TEXT
 
 CREATE TABLE top_cast (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
+movies_id INTEGER,
 actor_name TEXT,
-character_played TEXT,
-movies_id TEXT
+character_played TEXT
 ); 
 
 
@@ -128,14 +128,24 @@ VALUES (
 "Christopher Nolan"
 );
 
+INSERT INTO top_cast (
+movies_id,
+actor_name,
+character_played
+)
+VALUES (
+1,
+"Christian Bale",
+"Bruce Wayne"
+);
+
 -- Prints a header for the movies output
 .print "Movies"
 .print "======"
 .print ""
 
-SELECT * FROM movies;
-
 -- The SQL statement for the movies output
+SELECT * FROM movies;
 
 -- Prints a header for the cast output
 .print ""
@@ -143,5 +153,5 @@ SELECT * FROM movies;
 .print "========"
 .print ""
 
-
 -- The SQL statement for the cast output
+SELECT * FROM top_cast;
