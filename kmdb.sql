@@ -81,7 +81,7 @@ director TEXT
 
 CREATE TABLE top_cast (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
-movies_id INTEGER,
+title TEXT,
 actor_name TEXT,
 character_played TEXT
 ); 
@@ -129,12 +129,56 @@ VALUES (
 );
 
 INSERT INTO top_cast (
-movies_id,
+title,
 actor_name,
 character_played
 )
 VALUES (
-1,
+"Batman Begins",
+"Christian Bale",
+"Bruce Wayne"
+);
+
+INSERT INTO top_cast (
+title,
+actor_name,
+character_played
+)
+VALUES (
+"Batman Begins",
+"Michael Caine",
+"Alfred"
+);
+
+INSERT INTO top_cast (
+title,
+actor_name,
+character_played
+)
+VALUES (
+"Batman Begins",
+"Liam Neeson",
+"Ra's Al Ghul"
+);
+
+INSERT INTO top_cast (
+title,
+actor_name,
+character_played
+)
+VALUES (
+"Batman Begins",
+"Katie Holmes",
+"Rachel Dawes"
+);
+
+INSERT INTO top_cast (
+title,
+actor_name,
+character_played
+)
+VALUES (
+"The Dark Knight",
 "Christian Bale",
 "Bruce Wayne"
 );
